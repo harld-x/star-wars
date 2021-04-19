@@ -3,6 +3,7 @@ const { alias } = require('react-app-rewire-alias')
 module.exports = function override(config, env) {
 	alias({
   		'@components': 'src/components',
+  		'@yu': 'src/components/UI',
   		'@containers': 'src/containers',
   		'@constants': 'src/constants',
   		'@HOC': 'src/HOC',
