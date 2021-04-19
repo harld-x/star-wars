@@ -1,0 +1,36 @@
+:root {
+  --color-white: #fff;
+  --color-bg: rgba(4, 13, 24, 0.904);
+  --color-yellow: #ffff00;
+  --color-black: rgba(31, 119, 146, 0.849);
+
+  --transition: 0.4s;
+  --spacing-medium: 20px;
+  --border-radius-small: 3px;
+
+  --theme-default-header: #cccc46;
+  --theme-default-bgimage: url('@static/bg.jpg');
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  background-image: var(--theme-default-bgimage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+img {
+  display: block;
+}
+
+.header__text {
+  line-height: 1.7;
+  font-size: 25px;
+  color: var(--theme-default-header);
+  text-shadow: 0 0 2px var(--color-black);
+  transition: color var(--transition) ease;
+}
